@@ -1,15 +1,29 @@
+DNA-API
 
     REST API que analiza si una persona tiene mutación genetica basado en su secuencia de ADN.
 
-Instalación
+Instalación:
 
      Instala dependencias con NPM:
      npm i
 
-inciciar el servidor
+inciciar el servidor:
      
      npm start
 
-Mediante POSTMAN agrega al body la secuencia de ADN a verificar.
+Mediante POSTMAN agrega el siguiente URL: 
+
+    https://teamknowlogy-dna-api.herokuapp.com/
+   
+   
+Agrega al body la secuencia de ADN a verificar, incluyendo llave "dna".
          
-     ["ACGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]
+     { “dna”:["ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"]}
+     
+  
+Realiza un POST al servicio /mutation:
+
+    POST → /mutation/
+
+
+
